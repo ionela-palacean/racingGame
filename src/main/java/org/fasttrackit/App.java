@@ -1,5 +1,8 @@
 package org.fasttrackit;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -49,5 +52,13 @@ engine2.capacity=1600;
 
         car=car2;
 
+        System.out.println("Modulo examples:");
+        System.out.println(4 % 2);
+        System.out.println(4 % 3);
+
+        System.out.println("Please enter some text");
+        Scanner scanner=new Scanner(System.in);
+        String text=scanner.nextLine();
+        System.out.println("Input from user" + text);
     }
 }

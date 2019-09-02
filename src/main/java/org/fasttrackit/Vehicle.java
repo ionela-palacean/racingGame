@@ -24,6 +24,9 @@ public class Vehicle {
         fuelLevel -= usedFuel;
         System.out.println("Remaining fuel: " + fuelLevel);
 
+       // fuelLevel=feulLevel+1;
+         // fuelLevel+=1;
+         // fuelLevel++; incrementation model
         return distance;
 
     }
