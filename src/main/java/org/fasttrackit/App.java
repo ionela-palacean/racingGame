@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class App {
     public static void main(String[] args) {
-        Engine engine=new Engine();
+        Engine engine = new Engine();
 
         Car car = new Car(engine);
         car.setName("Dacia");
@@ -28,6 +28,7 @@ public class App {
         car.accelerate(60, 1);
         car.accelerate(90);
 
+
         Engine engine2 = new Engine();
         engine2.manufacturer = "VW";
         engine2.capacity = 1600;
@@ -45,7 +46,7 @@ public class App {
         System.out.println("car2 name: " + car2.getName());
         System.out.println("car1 name: " + car.getName());
 
-     //  car = car2;
+        //  car = car2;
 
         System.out.println("Modulo examples:");
         System.out.println(4 % 2);
@@ -67,6 +68,16 @@ public class App {
 //        System.out.println("Total count in car 2: "+ car2.totalCount);
 //        System.out.println("Total count in Car class: "+ Car.totalCount);
 
-    }
 
+        Vehicle hibridCar = new HibridCar();
+        hibridCar.setName("Cheater!!!");
+     // method implementation from object's class not from  variable's class
+        hibridCar.accelerate(60, 1);
+        System.out.println("Fuel Level" + hibridCar.getFuelLevel());
+        System.out.println(" Traveled distance"+hibridCar.getTravelDistance());
+
+        //variable type what methods can be  invoked
+        // type casting
+        ((HibridCar) hibridCar).fly();
+    }
 }
