@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class HibridCar extends Vehicle {
+public class HybridCar extends Vehicle {
 
 
     @Override
@@ -16,8 +16,8 @@ public class HibridCar extends Vehicle {
 //co-variant return type
 
         @Override
-        protected HibridCar clone() throws CloneNotSupportedException {
-            return new HibridCar();
+        protected HybridCar clone() throws CloneNotSupportedException {
+            return new HybridCar();
 
 
         }

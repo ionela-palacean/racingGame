@@ -69,15 +69,15 @@ public class App {
 //        System.out.println("Total count in Car class: "+ Car.totalCount);
 
 
-        Vehicle hibridCar = new HibridCar();
-        hibridCar.setName("Cheater!!!");
+        Vehicle hybridCar = new HybridCar();
+        hybridCar.setName("Cheater!!!");
      // method implementation from object's class not from  variable's class
-        hibridCar.accelerate(60, 1);
-        System.out.println("Fuel Level" + hibridCar.getFuelLevel());
-        System.out.println(" Traveled distance"+hibridCar.getTravelDistance());
+        hybridCar.accelerate(60, 1);
+        System.out.println("Fuel Level" + hybridCar.getFuelLevel());
+        System.out.println(" Traveled distance"+hybridCar.getTravelDistance());
 
         //variable type what methods can be  invoked
         // type casting
-        ((HibridCar) hibridCar).fly();
+        ((HybridCar) hybridCar).fly();
     }
 }

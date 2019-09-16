@@ -6,6 +6,8 @@ public class Game {
     private Vehicle competitor2;
 
 
+public void start () {
 
+}
 
 }
