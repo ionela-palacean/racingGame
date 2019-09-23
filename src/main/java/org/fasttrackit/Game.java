@@ -15,7 +15,7 @@ public class Game {
     private List<Vehicle> competitors = new ArrayList<>();
 
 
-    public void start() {
+    public void start() throws Exception {
 
         initializeTracks();
         displayTracks();
@@ -23,7 +23,7 @@ public class Game {
 
     }
 
-    private void initializeCompetitors() {
+    private void initializeCompetitors() throws Exception {
         int competitorCount = getCompetitorCountFromUser();
         System.out.println(" Today's competitors are:");
         for (int i = 0; i < competitorCount; i++) {
@@ -53,7 +53,7 @@ public class Game {
         }
     }
 
-    private int getCompetitorCountFromUser() {
+    private int getCompetitorCountFromUser() throws Exception {
 
         System.out.println("Please enter number of players");
         Scanner scanner=new Scanner(System.in);
@@ -62,7 +62,7 @@ public class Game {
             return scanner.nextInt();
         } catch (InputMismatchException e) {
 
-            throw new RuntimeException("You have entered an invalid number");
+            throw new Exception("You have entered an invalid number");
         } finally {
             System.out.println("Finally block is always executed.");
         }
